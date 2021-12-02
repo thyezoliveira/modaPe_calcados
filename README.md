@@ -1,10 +1,15 @@
-# Projeto 01 - Modapé Calçados | Backend
+# Projeto 01 - Modapé Calçados
 
-Aqui está o backend do modaPé Calçados. Iremos guardar aqui todos os códigos referentes ao projeto e com um padrão de organização de código.
+Aqui está o backend e o frontend do modaPé Calçados. Iremos guardar aqui todos os códigos referentes ao projeto.
 
 ## Rodar o projeto
-Para rodar o projeto clone este repositório, e rode:
+Para rodar o projeto clone este repositório, e rode o comando a seguir no powerShell:
 
-``` python main.py  ```
+``` 
+> pipenv shell
+> $env:FLASK_APP = "app"
+> $env:FLASK_ENV = "development"
+> flask run
+  ```
 
-Versão: 0.0.1
+Versão: 0.1.0
