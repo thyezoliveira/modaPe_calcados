@@ -16,6 +16,7 @@ class Usuario:
         return self.password
 
 usuario1 = Usuario('modape', 'calcados2022')
+usuario2 = Usuario('admin', 'admin')
 #------------------------------------X------------------------------------
 
 # Rota da Tela de login --------------------------------------------------
@@ -38,6 +39,12 @@ def register():
 
     if username == usuario1.get_username():
         if password == usuario1.get_password():
+            session['username'] = username
+            return redirect(url_for('main'), code=307, Response=None)
+        else:
+            return "Senha incorreta!"
+    elif username == usuario2.get_username():
+        if password == usuario2.get_password():
             session['username'] = username
             return redirect(url_for('main'), code=307, Response=None)
         else:
