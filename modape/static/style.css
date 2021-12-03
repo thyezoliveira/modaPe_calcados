@@ -23,14 +23,36 @@ header {
 header a {
   color: #fefefe;
   text-decoration: none;
-  -webkit-filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.8));
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+  -webkit-animation: pulse 5s ease infinite;
+          animation: pulse 5s ease infinite;
 }
 
-header a:hover {
-  color: crimson;
+@-webkit-keyframes pulse {
+  0% {
+    color: white;
+  }
+  50% {
+    color: cornflowerblue;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  50% {
+    color: cornflowerblue;
+  }
+  100% {
+    color: white;
+  }
 }
 
 header h2 {
@@ -102,6 +124,29 @@ main p {
   text-align: center;
   font-size: 14px;
   font-weight: 100;
+}
+
+main p a {
+  text-decoration: none;
+  color: #444;
+}
+
+main p a:hover {
+  color: crimson;
+}
+
+main h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+main ul {
+  margin: 16px 0;
+}
+
+main ul li {
+  font-size: 14px;
 }
 
 main form {

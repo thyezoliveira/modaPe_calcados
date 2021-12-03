@@ -16,11 +16,20 @@ header {
     a{
         color: #fefefe;
         text-decoration: none;
-        filter: drop-shadow(0 2px 8px rgba(0,0,0,.5));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,.8));
         transition: all .2s ease-out;
-        
-        &:hover {
-            color:crimson;
+        animation: pulse 5s ease infinite;
+
+        @keyframes pulse {
+            0%{
+                color:white;
+            }
+            50%{
+                color:cornflowerblue;
+            }
+            100%{
+                color: white;
+            }
         }
     }
 
@@ -76,6 +85,29 @@ main {
         text-align: center;
         font-size: 14px;
         font-weight: 100;
+
+        a {
+            text-decoration: none;
+            color: #444;
+
+            &:hover {
+                color: crimson;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 18px;
+
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    ul {
+        margin: 16px 0;
+        li {
+            font-size: 14px;
+        }
     }
 
     form {
