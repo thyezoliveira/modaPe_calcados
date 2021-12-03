@@ -12,4 +12,4 @@ Para rodar o projeto clone este repositório, e rode o comando a seguir no power
 > flask run
   ```
 
-Versão: 0.1.0
+Versão: 0.2.1
