@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= {{style}} >
+    <title>modaPé</title>
+</head>
+<body>
+
+    <header>
+        <a href="/">
+            <h1>modaPé</h1>
+        </a>
+        <h2>Calçados</h2>
+    </header>
+
+    {% if session['username'] %}
+    <nav>
+        <ul>
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/sair">Sair</a></li>
+        </ul>
+        
+        <div id="sessionArea">
+            <p>Usuário: {{username}}</p>
+        </div>
+    </nav>
+    {% endif %}
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>Desenvolvido por Thyéz de Oliveira Monteiro</p>
+    </footer>
+</body>
+</html>
