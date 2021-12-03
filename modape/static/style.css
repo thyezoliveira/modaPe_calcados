@@ -138,8 +138,10 @@ main p a:hover {
 
 main h2 {
   font-size: 32px;
+  letter-spacing: 0.04em;
   text-align: center;
   margin: 8px 0;
+  font-weight: 400;
 }
 
 main ul {
@@ -169,8 +171,10 @@ main form input {
 
 main div.dica {
   margin: 32px 0;
-  padding: 16px;
+  padding: 8px;
   background-color: #ccc;
+  border-radius: 32px;
+  letter-spacing: -0.04em;
 }
 
 footer {
@@ -188,6 +192,7 @@ footer p {
   color: #fefefe;
   font-family: sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
 }
 /*# sourceMappingURL=style.css.map */
